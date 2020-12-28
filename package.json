@@ -1,16 +1,16 @@
 {
-  "name": "balancer",
+  "name": "valueliquid-subgraph",
   "version": "0.1.0",
   "scripts": {
-    "create": "graph create balancer-labs/balancer-subgraph --node https://api.thegraph.com/deploy/",
-    "create:local": "graph create balancer-labs/balancer-subgraph --node http://127.0.0.1:8020",
+    "create": "graph create valueliquid/exchange-local --node https://api.thegraph.com/deploy/",
+    "create:local": "graph create valueliquid/exchange-local --node http://127.0.0.1:8020",
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "deploy": "graph deploy balancer-labs/balancer --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy:beta": "graph deploy balancer-labs/balancer-beta --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy:kovan": "graph deploy balancer-labs/balancer-kovan subgraph.kovan.yaml --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy:ropsten": "graph deploy balancer-labs/balancer-ropsten subgraph.ropsten.yaml --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy:local": "graph deploy balancer-labs/balancer-subgraph subgraph.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy valueliquid/exchange --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy:beta": "graph deploy valueliquid/exchange-beta --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy:kovan": "graph deploy valueliquid/exchange-kovan subgraph.kovan.yaml --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy:ropsten": "graph deploy valueliquid/exchange-ropsten subgraph.ropsten.yaml --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy:local": "graph deploy valueliquid/exchange-local subgraph.local.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.18.0",

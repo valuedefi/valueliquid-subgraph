@@ -1,4 +1,4 @@
-# Balancer Subgraph
+# Value Subgraph
 
 The graphql schema is still under heavy development and will likely have major breaking changes.
 
